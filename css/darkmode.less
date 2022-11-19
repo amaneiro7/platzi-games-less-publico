@@ -1,0 +1,25 @@
+.dark () when (@dark-mode = true) {
+    body {
+        background-color: @color-primario;
+    }
+
+    .intro {
+        background-color: @color-secundario;    
+    }
+    .articulo--principal {
+        p {
+            color: @color-claro;
+        }
+        h3,h2 {
+            color: @color-secundario;
+        }
+    }
+    .caja {
+        h3, p, span, a {
+            color: @color-claro;
+        }
+        &__contenido {
+            background-color: @color-secundario;
+        }
+    }
+}
